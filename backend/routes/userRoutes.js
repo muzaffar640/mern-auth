@@ -7,7 +7,7 @@ import {
   updateUserProfile,
 } from "../controllers/userController.js";
 const router = express.Router();
-import { protect } from "../../middleware/authMiddleware.js";
+import { protect } from "../middleware/authMiddleware.js";
 
 router.post("/", registerUser);
 router.post("/auth", authUser);
